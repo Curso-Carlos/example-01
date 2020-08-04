@@ -1,0 +1,36 @@
+<script type="text/javascript">
+    function calc(n1, n2, operador) {
+        let expressao = '';
+
+        switch (operador) {
+            case '+':
+                expressao = n1 + ' + ' + n2 + ' = ' + (n1 + n2);
+                break;
+            case '-':
+                expressao = n1 + ' - ' + n2 + ' = ' + (n1 - n2);
+                break;
+            case '*':
+                expressao = n1 + ' * ' + n2 + ' = ' + (n1 * n2);
+                break;
+            case '/':
+                expressao = n1 + ' / ' + n2 + ' = ' + (n1 / n2);
+                break;
+            case '%':
+                expressao = n1 + ' % ' + n2 + ' = ' + (n1 % n2);
+                break;
+            default:
+                expressao = 'Operador Invalido';
+        }
+
+        return expressao;
+    }
+
+    let n1 = 10;
+    let n2 = 5;
+
+    console.log(calc(n1, n2, '+'));
+    console.log(calc(n1, n2, '-'));
+    console.log(calc(n1, n2, '*'));
+    console.log(calc(n1, n2, '/'));
+    console.log(calc(n1, n2, '%'));
+</script>
